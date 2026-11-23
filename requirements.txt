@@ -1,0 +1,62 @@
+# ============================================================
+# Linkareer AI Harness - Python 의존성 목록
+# 설치:  pip install -r requirements.txt
+#   (권장: 먼저 가상환경 생성)
+#   python -m venv .venv
+#   .venv\Scripts\activate        # Windows PowerShell
+#   pip install -r requirements.txt
+# ============================================================
+
+# --- 웹 서버 (FastAPI / Uvicorn) ---
+fastapi==0.123.5
+uvicorn[standard]==0.38.0
+
+# --- 데이터 모델 / 검증 ---
+pydantic==2.12.3
+
+# --- 환경변수 (.env) ---
+python-dotenv==1.1.1
+
+# --- HTTP 클라이언트 (고용24 / 사람인 등 외부 API) ---
+requests==2.32.5
+
+# --- 멀티 에이전트 오케스트레이션 ---
+crewai==1.6.1
+
+# --- 검색 도구 (Tavily) ---
+tavily-python==0.7.25
+
+# --- LLM / LangChain (AI 상담 챗봇) ---
+openai==2.8.1
+langchain==1.2.0
+langchain-core==1.4.0
+langchain-classic==1.0.7
+langchain-openai==1.1.5
+
+# --- PDF 생성 (스펙 진단서) ---
+reportlab==4.5.1
+
+# --- 대시보드 시각화 ---
+matplotlib==3.10.3
+seaborn==0.13.2
+plotly==6.1.2
+numpy==2.2.6
+
+# --- PDF 파싱 (워크넷 직업선호도검사 L형) ---
+pdfplumber==0.11.7
+
+# --- Google Calendar (로드맵 일정 동기화) ---
+google-api-python-client==2.187.0
+google-auth==2.41.1
+google-auth-oauthlib==1.2.3
+
+# --- 크루 및 벡터 DB ---
+crewai-tools
+chromadb
+
+# --- 크롤링 엔진 ---
+playwright
+
+# --- HTML 파싱 / User-Agent 로테이션 (rule 크롤러) ---
+beautifulsoup4==4.13.4
+fake-useragent==2.2.0
